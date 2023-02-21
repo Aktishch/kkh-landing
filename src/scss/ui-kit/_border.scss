@@ -1,0 +1,24 @@
+// Рамка
+.border {
+  border: 2px solid var(--color-grey-20);
+
+  &-top {
+    border-top: 2px solid var(--color-grey-20);
+  }
+
+  &-left {
+    border-left: 2px solid var(--color-grey-20);
+  }
+
+  &-right {
+    border-right: 2px solid var(--color-grey-20);
+  }
+
+  &-bottom {
+    border-bottom: 2px solid var(--color-grey-20);
+  }
+
+  &-none {
+    border: none;
+  }
+}

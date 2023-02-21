@@ -1,0 +1,131 @@
+// Главный блок
+.main {
+  padding-top     : 145px;
+  min-height      : 850px;
+  background-image: linear-gradient(98.43deg, var(--color-white-20) 0%, var(--color-none) 56.45%);
+
+  &__bg {
+    mix-blend-mode: luminosity;
+  }
+
+  &__btn {
+    max-width: 340px;
+  }
+
+  @media(max-width: $md) {
+    & {
+      padding-top: 120px;
+    }
+  }
+}
+
+// О нас
+.about {
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-none) 100%), var(--color-second-50);
+
+  &__bg {
+    mix-blend-mode: overlay;
+    transform     : scaleX(-1);
+  }
+
+  &-slider {
+    background-image: radial-gradient(98.48% 326.98% at 0% 3.35%, var(--color-white) 0%, var(--color-white-50) 100%);
+    backdrop-filter : blur(20px);
+  }
+
+  &__btn {
+    width : 110px;
+    height: 75px;
+  }
+
+  @media(max-width: $md) {
+    &-slider {
+      background     : none;
+      backdrop-filter: blur(0);
+      border         : none;
+      border-radius  : 0;
+    }
+
+    &-slide {
+      height: 280px;
+    }
+
+    &__btn {
+      width        : 70px;
+      height       : 50px;
+      border-radius: 12px;
+    }
+  }
+}
+
+// Интересные факты
+.evidence {
+  &__item {
+    background-image: linear-gradient(289.55deg, var(--color-white-20) 0%, var(--color-none) 89%);
+  }
+
+  &__blur {
+    mix-blend-mode: luminosity;
+    filter        : blur(10px);
+  }
+
+  &__content {
+    background-image: radial-gradient(98.48% 326.98% at 0% 3.35%, var(--color-black-20) 0%, var(--color-white-10) 100%);
+    backdrop-filter : blur(5px);
+  }
+
+  @media(max-width: $xl) {
+    &__content {
+      backdrop-filter: blur(2px);
+      z-index        : 1;
+    }
+
+    &__text {
+      opacity: 1;
+    }
+
+    &__bg {
+      opacity: 0.4;
+    }
+  }
+}
+
+// Отзывы
+.reviews {
+  &__bg {
+    mix-blend-mode: luminosity;
+  }
+
+  &__head {
+    border-bottom: {
+      left-radius : 0;
+      right-radius: 0;
+    }
+  }
+}
+
+// Купить билет
+.tickets {
+  &__bg {
+    &::before {
+      content   : "";
+      position  : absolute;
+      inset     : 0;
+      background: linear-gradient(180deg, var(--color-none) 0%, var(--color-primary-30) 100%), var(--color-black-40);
+      z-index   : 1;
+    }
+  }
+
+  &__content {
+    background     : radial-gradient(98.48% 326.98% at 0% 3.35%, var(--color-black-20) 0%, var(--color-white-10) 100%);
+    backdrop-filter: blur(20px)
+  }
+
+  &__pack {
+    max-width: 160px;
+  }
+
+  &__btn {
+    max-width: 400px;
+  }
+}

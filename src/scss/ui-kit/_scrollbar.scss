@@ -1,0 +1,25 @@
+// Полоса прокрутки
+* {
+  scrollbar: {
+    width: thin;
+    color: var(--color-second) var(--color-primary-dark);
+  }
+
+  &::-webkit-scrollbar {
+    @media(pointer: fine) {
+      width: 8px;
+
+      &-track {
+        background-color: var(--color-primary-dark);
+      }
+
+      &-thumb {
+        background-color: var(--color-second);
+      }
+
+      &-corner {
+        background-color: var(--color-primary-dark);
+      }
+    }
+  }
+}
