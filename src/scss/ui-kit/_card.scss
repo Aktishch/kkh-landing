@@ -4,9 +4,10 @@
   flex-direction  : column;
   position        : relative;
   background-color: var(--color-white);
-  box-shadow      : 8px 8px 4px var(--color-black-10);
-  border-radius   : 16px;
+  box-shadow      : 0 8px 20px 0 var(--color-black-10);
+  border-radius   : 18px;
   transition      : box-shadow 0.2s ease;
+
   overflow        : hidden;
 
   &-content {
@@ -17,7 +18,7 @@
 
   @media(hover) {
     &:hover {
-      box-shadow: 8px 8px 4px var(--color-black-30);
+      box-shadow: 0 8px 20px 0 var(--color-black-30);
     }
   }
 }

@@ -9,42 +9,67 @@
 
 <!-- Главный блок -->
 
-<main class="main container relative bg-primary overflow-hidden">
-  <div class="main__bg blur bg-block">
+<main class="main container flex align-center justify-center relative bg-primary overflow-hidden">
+  <div class="bg-block">
     <div class="pack pack--rect h-100">
       <picture>
-        <source srcset="img/pictures/blur.webp" type="image/webp">
-        <img class="image" src="img/pictures/blur.png" loading="lazy" alt="">
-      </picture>
-    </div>
-  </div>
-  <div class="bg-block anim anim--decrease linear duration-7" data-anim="hidden">
-    <div class="pack pack--rect h-100">
-      <picture>
-        <source srcset="img/pictures/personal.webp" type="image/webp">
-        <img class="image" src="img/pictures/personal.png" alt="">
+        <source srcset="img/pictures/main-bg.webp" type="image/webp">
+        <img class="image image--tr" src="img/pictures/main-bg.png" loading="lazy" alt="">
       </picture>
     </div>
   </div>
   <div class="flex flex-column align-center justify-center relative color-white">
     <h1 class="font-alt text text--center text-30 text-md-38 text-lg-48 bold-6 lh-3 mb-4 anim anim--up ease duration-5" data-anim="hidden">
-      Концерт кубанского казачьего хора <br class="d-none d-md-block">
-      13 января в Ростове-на-Дону
+      Российская культура: <br class="d-none d-md-block"> Сергей Рахманинов
     </h1>
     <h3 class="text text--center text-14 text-md-16 bold-4 lh-3 fade-70 mb-5 mb-md-10 anim anim--up ease duration-5 delay-3" data-anim="hidden">
-      Единственный в России профессиональный коллектив народного творчества, <br class="d-none d-md-block">
-      имеющий непрерывную преемственную историю с начала XIX века
+      Открытый всероссийский музыкальный фестиваль, <br class="d-none d-md-block"> посвященный 150-летию со дня рождения композитора
     </h3>
-    <div class="w-100 anim anim--up ease duration-5 delay-5" data-anim="hidden">
-      <button class="main__btn btn btn--second btn--lg btn--fill btn--glow w-100 mx-auto" data-waved>Купить билет</button>
+    <div class="main__btns flex align-center justify-center gap-6 w-100 anim anim--up ease duration-5 delay-5" data-anim="hidden">
+      <button class="flex-grow btn btn--second btn--lg btn--fill btn--glow w-100 mx-auto" data-waved>7 декабря</button>
+      <button class="flex-grow btn btn--second btn--lg btn--fill btn--glow w-100 mx-auto" data-waved>8 декабря</button>
     </div>
   </div>
 </main>
 
-<!-- О нас -->
+<!-- Программа -->
 
-<section class="about container container--sm relative" id="about">
-  <div class="about__bg blur bg-block">
+<section class="container container--sm relative overflow-hidden" id="programm">
+  <h2 class="font-alt text text--center text-30 text-md-38 text-lg-48 bold-6 lh-3 mb-5 mb-md-10 anim anim--up ease duration-5" data-anim="hidden">Программа фестиваля</h2>
+  <div class="grid gap-5 gap-lg-10">
+    <div class="relative bg-grey col-12 col-md-6 anim anim--right ease duration-5" data-anim="hidden">
+      <div class="loader">
+        <span class="loader-progress">
+          <svg class="loader-icon icon">
+            <use xlink:href="img/icons.svg#loader">
+          </svg>
+        </span>
+      </div>
+      <picture>
+        <source srcset="img/pictures/programm-1.webp" type="image/webp">
+        <img class="d-block relative w-100" src="img/pictures/programm-1.jpg" alt="">
+      </picture>
+    </div>
+    <div class="relative bg-grey col-12 col-md-6 anim anim--left ease duration-5" data-anim="hidden">
+      <div class="loader">
+        <span class="loader-progress">
+          <svg class="loader-icon icon">
+            <use xlink:href="img/icons.svg#loader">
+          </svg>
+        </span>
+      </div>
+      <picture>
+        <source srcset="img/pictures/programm-2.webp" type="image/webp">
+        <img class="d-block relative w-100" src="img/pictures/programm-2.jpg" alt="">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<!-- Фестиваль -->
+
+<section class="festival container relative overflow-hidden" id="festival">
+  <div class="festival__bg blur bg-block">
     <div class="pack pack--rect h-100">
       <picture>
         <source srcset="img/pictures/blur.webp" type="image/webp">
@@ -52,226 +77,60 @@
       </picture>
     </div>
   </div>
-  <div class="relative">
-    <h2 class="font-alt text text--center text-30 text-md-38 text-lg-48 bold-6 lh-3 mb-2 anim anim--up ease duration-5" data-anim="hidden">Погрузитесь в нашу атмосферу</h2>
-    <h3 class="text text--center text-14 text-md-16 bold-4 lh-3 fade-70 mb-5 mb-md-10 anim anim--up ease duration-5" data-anim="hidden">
-      Это не просто концерт, мы открываем для вас часть своей души
-    </h3>
-    <div class="about-slider relative border radius-4 p-md-4 anim anim--fade ease duration-5" data-anim="hidden">
-      <div class="swiper swiper--overwrap">
-        <div class="swiper-wrapper">
-          <a class="about-slide swiper-slide pack pack--half bg-primary radius-4" data-fancybox href="https://www.youtube.com/watch?v=ewBSMnjP7l8">
-            <div class="loader">
-              <span class="loader-progress">
-                <svg class="loader-icon icon">
-                  <use xlink:href="img/icons.svg#loader">
-                </svg>
-              </span>
-            </div>
-            <picture>
-              <img class="image image--rise" src="img/pictures/video.gif" loading="lazy" alt="">
-            </picture>
-            <div class="bg-block flex align-center justify-center pointer-none">
-              <button class="about__btn btn btn--red btn--fill radius-5 text-26 text-md-32 pointer-all" data-waved>
-                <svg class="icon">
-                  <use xlink:href="img/icons.svg#play">
-                </svg>
-              </button>
-            </div>
-          </a>
-        </div>
+  <div class="festival__block flex align-center justify-between gap-5 gap-lg-10 relative">
+    <div class="festival__image relative bg-grey w-100 anim anim--right ease duration-5" data-anim="hidden">
+      <div class="loader">
+        <span class="loader-progress">
+          <svg class="loader-icon icon">
+            <use xlink:href="img/icons.svg#loader">
+          </svg>
+        </span>
       </div>
-      <!-- <div class="swiper-pagination d-flex d-md-none color-primary mt-5"></div>
-      <button class="swiper-button-prev btn btn--black btn--light text-18 d-none d-md-flex" data-waved>
-        <svg class="icon">
-          <use xlink:href="img/icons.svg#arrow-left">
-        </svg>
-      </button>
-      <button class="swiper-button-next btn btn--black btn--light text-18 d-none d-md-flex" data-waved>
-        <svg class="icon">
-          <use xlink:href="img/icons.svg#arrow-right">
-        </svg>
-      </button> -->
+      <picture>
+        <source srcset="img/pictures/festival-bg.webp" type="image/webp">
+        <img class="d-block relative w-100" src="img/pictures/festival-bg.jpg" alt="">
+      </picture>
+      <div class="bg-block flex flex-column color-white p-5 p-md-10">
+        <h3 class="font-alt text-24 bold-6 lh-3 mb-3 mt-auto">Алексей Пугачев</h3>
+        <p class="text-14 bold-4 lh-4">
+          Инициатор - генеральный директор культурного Фонда отечественного искусства «Классика ХХI», генеральный продюсер Фестиваля
+        </p>
+      </div>
+    </div>
+    <div class="festival__content w-100 anim anim--left ease duration-5" data-anim="hidden">
+      <h2 class="font-alt text text-30 text-md-38 text-lg-48 bold-6 lh-3 mb-5 mb-md-10">О фестивале</h2>
+      <p class="text-15 bold-4 lh-5 mb-5">
+        Открытый Всероссийский музыкальный фестиваль «Российская культура: Сергей Рахманинов» — масштабный проект в области академического музыкального искусства.
+      </p>
+      <p class="text-15 bold-4 lh-5 mb-5">
+        Фестиваль проводится в 2023 году, объявленном Президентом Российской Федерации Годом педагога и наставника, в рамках Указа Президента Российской Федерации от 25.01.2020 г.
+      </p>
+      <p class="text-15 bold-4 lh-5 mb-5">
+        № 62 «О праздновании 150-летия со дня рождения С.В. Рахманинова».Целью проекта является создание Всероссийской созидательной платформы для поддержки молодых исполнителей в области академического искусства, укрепления российских традиционных духовно-нравственных ценностей. <br>
+        Новый проект культурного Фонда отечественного искусства «Классика ХХ» — одно из немногих творческих событий в Российской Федерации, где реализуется программа продвижения молодых музыкантов в возрасте от 14 до 35 лет, наставнического пост-сопровождения по отношению к ним со стороны выдающихся педагогов и мастеров исполнительского искусства.
+      </p>
+      <p class="text-15 bold-4 lh-5">
+        Важнейшая задача фестиваля — проведение Всероссийского образовательного кластера с участием представителей из 70 российских регионов.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- Интересные факты -->
+<!-- Артисты -->
 
-<% var evidence = [
-  {
-    item: 'col-12 col-md-6',
-    bg: 'yellow',
-    title: 'Первая музыкальная <br class="d-none d-lg-block"> школа',
-    text: 'Первая кубанская музыкальная школа <br class="d-none d-lg-block"> появилась в марте 1812 года и была <br class="d-none d-lg-block"> создана для обучения 38 человек, <br class="d-none d-lg-block"> в основном, мальчиков в возрасте <br class="d-none d-lg-block">от 13 до 15 лет',
-    img: '1'
-  },
-  {
-    item: 'col-12 col-md-6 delay-md-2',
-    bg: 'primary',
-    title: 'Первая музыкальная <br class="d-none d-lg-block"> школа',
-    text: 'Первая кубанская музыкальная школа <br class="d-none d-lg-block"> появилась в марте 1812 года и была <br class="d-none d-lg-block"> создана для обучения 38 человек, <br class="d-none d-lg-block"> в основном, мальчиков в возрасте <br class="d-none d-lg-block"> от 13 до 15 лет',
-    img: '2'
-  },
-  {
-    item: 'col-12',
-    bg: 'brown',
-    title: 'Художественный руководитель и главный <br class="d-none d-lg-block"> дирижер Кубанского казачьего хора',
-    text: 'Советский и российский фольклорист и общественный деятель, исследователь народной песни, <br class="d-none d-lg-block"> хоровой дирижёр, профессор, композитор. Художественный руководитель Государственного <br class="d-none d-lg-block"> академического Кубанского казачьего хора. Член Совета по государственной политике при <br class="d-none d-lg-block"> Председателе Совета Федерации Федерального Собрания Российской Федерации, член <br class="d-none d-lg-block"> Патриаршего Совета по культуре',
-    img: '3'
-  },
-  {
-    item: 'col-12 col-md-6',
-    bg: 'primary',
-    title: 'Исторический <br class="d-none d-lg-block"> репертуар',
-    text: 'В репертуаре Кубанского казачьего хора <br class="d-none d-lg-block"> сохранены песни разных эпох. В них <br class="d-none d-lg-block"> запечатлены факты военного и культурного <br class="d-none d-lg-block"> освоения Кубани, биография Кубанского <br class="d-none d-lg-block"> казачьего войска, светская и духовная <br class="d-none d-lg-block"> культура Екатеринодара',
-    img: '4'
-  },
-  {
-    item: 'col-12 col-md-6 delay-md-2',
-    bg: 'blue',
-    title: 'Награды <br class="d-none d-lg-block"> и достижения',
-    text: 'Хор является дважды лауреатом <br class="d-none d-lg-block"> Всероссийских конкурсов государственных <br class="d-none d-lg-block"> русских народных хоров, лауреатом <br class="d-none d-lg-block"> Национальной премии Украины <br class="d-none d-lg-block"> им. Шевченко, лауреатом многих <br class="d-none d-lg-block"> международных фольклорных фестивалей',
-    img: '5'
-  }
-] %>
-
-<section class="evidence container bg-white" id="evidence">
-  <h2 class="font-alt text text--center text-30 text-md-38 text-lg-48 bold-6 lh-3 mb-2 anim anim--up ease duration-5" data-anim="hidden">А вы знали, что...</h2>
-  <h3 class="text text--center text-14 text-md-16 bold-4 lh-3 fade-70 mb-5 mb-md-10 anim anim--up ease duration-5" data-anim="hidden">
-    Делимся интересными фактами о нашем хоре
-  </h3>
-  <div class="grid gap-3 gap-md-5 gap-lg-7">
-    <% for (var i = 0; i < evidence.length; i++) { %>
-      <div class="<%= evidence[i].item %> anim anim--up ease-in-out duration-5" data-anim="hidden">
-        <div class="evidence__item bg-<%= evidence[i].bg %> relative radius-4 h-100 p-2">
-          <div class="evidence__blur blur bg-block radius-4">
-            <div class="pack pack--rect h-100">
-              <picture>
-                <source srcset="img/pictures/blur.webp" type="image/webp">
-                <img class="image" src="img/pictures/blur.png" loading="lazy" alt="">
-              </picture>
-            </div>
-          </div>
-          <div class="evidence__content relative color-white border radius-4 h-100 py-7 px-3 px-md-6 py-md-10 px-lg-8">
-            <h4 class="font-alt text text--uppercase text-18 text-md-22 text-lg-24 bold-7 lh-4 mb-5 mb-md-7">
-              <%= evidence[i].title %>
-            </h4>
-            <p class="evidence__text text-14 text-md-16 text-lg-14 bold-4 lh-3 fade-60">
-              <%= evidence[i].text %>
-            </p>
-          </div>
-          <div class="evidence__bg bg-block radius-4 pointer-none">
-            <div class="pack pack--rect h-100">
-              <picture>
-                <source srcset="img/pictures/evidence-<%= evidence[i].img %>.webp" type="image/webp">
-                <img class="image image--tr" src="img/pictures/evidence-<%= evidence[i].img %>.png" loading="lazy" alt="">
-              </picture>
-            </div>
-          </div>
-        </div>
+<section class="artists container" id="artists">
+  <h2 class="font-alt text text--center text-30 text-md-38 text-lg-48 bold-6 lh-3 mb-5 mb-md-10 anim anim--up ease duration-5" data-anim="hidden">Артисты фестиваля</h2>
+  <div class="artists__block grid gap-4 gap-md-10">
+    <% for (var i = 1; i < 10; i ++) { %>
+      <div class="artists__item col-6 col-md-3 flex flex-column align-center justify-center">
+        <picture>
+          <source srcset="img/pictures/artist-<%= i %>.webp" type="image/webp">
+          <img class="w-100 mb-5" src="img/pictures/artist-<%= i %>.png" alt="">
+        </picture>
+        <span class="text text--center text-16 bold-4 lh-2">Валерий Полянский</span>
       </div>
     <% } %>
   </div>
-</section>
-
-<!-- Отзывы -->
-
-<% var reviews = [
-  {
-    name: 'Наталья',
-    city: 'Прокопьевск, Кемеровская обл',
-    date: '11.06.2022',
-    time: '07:37:48',
-    text: 'Добрый день! Я живу в Кузбассе, у меня мечта, попасть на ваш концерт! Приезжайте к нам в далёкую Сибирь, мы ооочень ждём!'
-  },
-  {
-    name: 'Людмила',
-    city: 'Таганрог',
-    date: '25.05.2022',
-    time: '09:47:55',
-    text: 'Дорогие артисты Кубанского казачьего хора и руководство коллектива, спасибо Вам за концерт 24.05.2022 г. в Таганроге! как всегда - трогательно, до слез!  Вы стоите на переднем крае в воспитании нашего запутавшегося и закосневшего общества, несете свет и добро, на которые нужно равняться. И являетесь ориентиром для душ тех, кто не может найти дорогу к Родине и к себе. Спасибо что бережете наши песни! С уважением, семья Сирота.'
-  },
-  {
-    name: 'Елена',
-    city: 'Ессентуки',
-    date: '12.03.2022',
-    time: '16:03:03',
-    text: 'Добрый день! 8 марта  была на Вашем выступлении в г. Ессентуки! Полный Восторг - голоса, музыка, танцы, энергетика, юмор, душевность! Вы прекрасны! Спасибо Вам за Ваш труд! Ждем Вас снова в нашем городе!'
-  }
-] %>
-
-<section class="reviews container relative bg-primary" id="reviews">
-  <div class="reviews__bg blur bg-block">
-    <div class="pack pack--rect h-100">
-      <picture>
-        <source srcset="img/pictures/blur.webp" type="image/webp">
-        <img class="image" src="img/pictures/blur.png" loading="lazy" alt="">
-      </picture>
-    </div>
-  </div>
-  <div class="relative color-white">
-    <h2 class="font-alt text text--center text-30 text-md-38 text-lg-48 bold-6 lh-3 mb-2 anim anim--up ease duration-5" data-anim="hidden">Что о нас говорят</h2>
-    <h3 class="text text--center text-14 text-md-16 bold-4 lh-3 fade-70 mb-5 mb-md-10 anim anim--up ease duration-5" data-anim="hidden">
-      Отзывы людей, которые посетили наши концерты
-    </h3>
-    <div class="flex flex-column gap-4">
-      <% for (var i = 0; i < reviews.length; i++) { %>
-        <div class="anim anim--up ease duration-5" data-anim="hidden">
-          <div class="card color-black p-2 p-md-3" data-waved>
-            <div class="reviews__head flex flex-wrap align-center justify-between gap-2 gap-md-4 bg-grey radius-4 py-3 px-4">
-              <div class="flex w-100 w-md-auto">
-                <svg class="icon text-14 text-md-18 text-md-22 fade-40 mr-3 mr-md-6">
-                  <use xlink:href="img/icons.svg#marks">
-                </svg>
-                <div class="flex flex-column">
-                  <span class="text-16 text-md-18 bold-7 lh-3"><%= reviews[i].name %></span>
-                  <span class="text-12 text-md-14 bold-4 lh-3"><%= reviews[i].city %></span>
-                </div>
-              </div>
-              <div class="flex align-center gap-3">
-                <svg class="icon text-14 text-md-16 fade-40">
-                  <use xlink:href="img/icons.svg#calendar">
-                </svg>
-                <span class="text-12 text-md-14 bold-5 lh-3"><%= reviews[i].date %></span>
-                <span class="text-12 text-md-14 bold-5 lh-3 fade-40">|</span>
-                <span class="text-12 text-md-14 bold-5 lh-3"><%= reviews[i].time %></span>
-              </div>
-            </div>
-            <div class="card-content p-4">
-              <p class="text-14 bold-5 lh-5">
-                <%= reviews[i].text %>
-              </p>
-            </div>
-          </div>
-        </div>
-      <% } %>
-    </div>
-  </div>
-</section>
-
-<!-- Программа -->
-
-<section class="program container">
-  <h2 class="font-alt text text--center text-30 text-md-38 text-lg-48 bold-6 lh-3 mb-2 anim anim--up ease duration-5" data-anim="hidden">О концертной программе</h2>
-  <h3 class="text text--center text-14 text-md-16 bold-4 lh-3 fade-70 mb-5 mb-md-10 anim anim--up ease duration-5" data-anim="hidden">
-    Узнайте больше, что вас ждет на наших концертах
-  </h3>
-  <p class="text14 text-md-16 bold-4 lh-5 fade-70 mb-5 anim anim--up ease duration-5" data-anim="hidden">
-    Концертная программа Государственного академического Кубанского казачьего хора "Песней очистимся" приурочена к 85-летию художественного руководителя и главного дирижера коллектива, народного артиста России, дважды Героя труда Кубани, Героя Труда РФ Виктора Захарченко.​
-  </p>
-  <p class="text14 text-md-16 bold-4 lh-5 fade-70 mb-5 anim anim--up ease duration-5" data-anim="hidden">
-    Программу наполнят народные песни, мудрость которых во все времена ​ взращивала чувство патриотизма, гордости за свою страну, призывала к готовности отстаивать ее честь где бы то ни было. Ведь патриотизм – это не только встать на защиту своих границ, это и стремление дать словесный отпор тем, кто плохо высказывается о Родине и ее людях.​
-  </p>
-  <p class="text14 text-md-16 bold-4 lh-5 fade-70 mb-5 anim anim--up ease duration-5" data-anim="hidden">
-    Кубанский казачий хор — это смысл моего существования на этой земле, – говорит маэстро Захарченко. – А народные песни - это наше оружие, они неизменно доносят сокровенные мысли, касающиеся судьбы народа. Иными словами, песня – душа народа.
-  </p>
-  <p class="text14 text-md-16 bold-4 lh-5 fade-70 mb-5 anim anim--up ease duration-5" data-anim="hidden">
-    Талантливый ученый-фольклорист вернул к жизни сотни песенных народных шедевров, которые теперь греют душу современному слушателю,- не просто веселят, а заставляют задуматься, учат народной мудрости. Их поют по всей России и за ее пределами.​
-  </p>
-  <p class="text14 text-md-16 bold-4 lh-5 fade-70 anim anim--up ease duration-5" data-anim="hidden">
-    Также в концерте прозвучат песни на стихи русских и украинских классиков. Виктор Захарченко как самобытный композитор-песенник, творчески используя опыт фольклора, создает хоровые произведения высокого духовно-патриотического звучания и делает это с величайшей отдачей и искренностью.​
-  </p>
 </section>
 
 <!-- Купить билет -->
@@ -301,9 +160,12 @@
     </div>
     <h2 class="font-alt text text--center text-30 text-md-38 text-lg-48 bold-6 lh-3 mb-2 anim anim--up ease duration-5" data-anim="hidden">Успейте купить билет!</h2>
     <h3 class="text text--center text-14 text-md-16 bold-4 lh-3 fade-70 mb-5 mb-md-10 anim anim--up ease duration-5" data-anim="hidden">
-      Не упустите возможность попасть на концерт Кубанского казачьего хора в вашем городе!
+      Не упустите возможность попасть на Открытый всероссийский музыкальный фестиваль, <br class="d-none d-md-block"> посвященный 150-летию со дня рождения композитора!
     </h3>
-    <button class="tickets__btn btn btn--second btn--lg btn--fill btn--glow w-100 anim anim--up ease duration-5" data-waved data-anim="hidden">Купить билет</button>
+    <div class="tickets__btns flex align-center justify-center gap-6 w-100 anim anim--up ease duration-5 delay-5" data-anim="hidden">
+      <button class="tickets__btn btn btn--second btn--lg btn--fill btn--glow w-100" data-waved>7 декабря</button>
+      <button class="tickets__btn btn btn--second btn--lg btn--fill btn--glow w-100" data-waved>8 декабря</button>
+    </div>
   </div>
 </section>
 

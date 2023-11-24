@@ -1,6 +1,6 @@
 // Libraries
 import fancybox from './lib/fancybox'
-// import sliderSwiper from './lib/slider-swiper'
+import yandexMap from './lib/yandex-map'
 
 // Scripts
 import scrollHeader from './ts/scroll-header'
@@ -19,7 +19,7 @@ import './scss/index.scss'
 window.addEventListener('DOMContentLoaded', () => {
 
   fancybox.init()
-  // sliderSwiper.init()
+  yandexMap.init()
   scrollHeader.init()
   mobileMenu.init()
   progressLine.init()
