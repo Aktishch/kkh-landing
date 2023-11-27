@@ -9,6 +9,14 @@
   }
 
   @media(max-width: $md) {
+    & {
+      align-items: flex-end;
+    }
+
+    &__image {
+      object-position: 23% 10%;
+    }
+
     &__btns {
       flex-direction: column;
       align-items: flex-start;
